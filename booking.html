@@ -2,13 +2,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <header>
+    <header class="header">
         <a href="index.html"><img class="logo" src="images/logo.png" alt="" width="50" height="50"></a>
         <a href='index.html' class="title"> AKRAM'S HEATING & COOLING</a>
         <nav>
@@ -21,150 +22,38 @@
     </header>
     <body>
         <div id='booking-page'>
-            <div class='col-lg-6'>
-                <div class='panel panel-primary'>
-                  <div class='panel-heading'>
-                    <label>User: </label>
-                  </div>
-                  <div class='panel-body'>
-                    <div class='row-lg-6'>
-                      <div class='row-lg-6'>
-                        <div class='col-lg-3'>
-                          <label>Username: </label>
+            <div class="booking-body">
+                <div class="box">
+                    <form>
+                        <div class="user-imputs">
+                            <div class="input-container">
+                                <input id="userInput" type="text" required=""/>
+                                <label>Full Name</label>		
+                            </div>
+                            <div class="input-container">
+                                <input id="phone" type="text" required=""/>
+                                <label>Phone Number</label>		
+                            </div>
+                            <div class="input-container">
+                                <input id="email" type="text" required=""/>
+                                <label>Email</label>		
+                            </div>
+                            <div class="input-container">
+                                <input id="address" type="text" required=""/>
+                                <label>Address</label>		
+                            </div>
+                            <div class="message-container">
+                                <label>Message</label>
+                                <textarea id="messages" class="mesasge"></textarea>
+                            </div>
+                            <div>
+                                <a class="btn btn-info glyphicon glyphicon-erase custom" id='reset' onClick = "clearAll()"> Reset</a>
+                                <a class="btn btn-success glyphicon glyphicon-send custom" id='submit' onclick="validate()"> Submit</a>
+                            </div>
                         </div>
-                        <div class='col-lg-9'>
-                          <input class="form-control" placeholder="Type username..." id='userInput'></input>
-                        </div>
-                      </div>
-                      <div class='row-lg-6'>
-                        <div class='col-lg-3'>
-                          <label>First Name: </label>
-                        </div>
-                        <div class='col-lg-9'>
-                          <input class='form-control' placeholder="Type firstname..." id='firstInput'></input>
-                        </div>
-                      </div>
-                      <div class='row-lg-6'>
-                        <div class='col-lg-3'>
-                          <label>Last Name: </label>
-                        </div>
-                        <div class='col-lg-9'>
-                          <input class='form-control' placeholder="Type lastname..." id='lastInput'></input>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    </form>
                 </div>
-                <div class='panel panel-primary'>
-                  <div class='panel-heading'><label>Contact: </label></div>
-                  <div class='panel-body'>
-                    <div class='row-lg-6'>
-                      <div class='row-lg-6'>
-                        <div class="input-group">
-                          <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon2"></span>
-                          <input type="text" class="form-control" placeholder="Type phone#..." aria-describedby="sizing-addon2" id='phone'>
-                        </div>
-                      </div>
-                      <div class='row-lg-6'>
-                        <div class="input-group">
-                          <span class="input-group-addon glyphicon glyphicon-print" id="sizing-addon2"></span>
-                          <input type="text" class="form-control" placeholder="Type fax#..." aria-describedby="sizing-addon2" id='fax'>
-                        </div>
-                      </div>
-                      <div class='row-lg-6'>
-                        <div class="input-group">
-                          <span class="input-group-addon glyphicon glyphicon-envelope" id="sizing-addon2"></span>
-                          <input type="text" class="form-control" placeholder="Type e-mial..." aria-describedby="sizing-addon2" id='email'>
-                        </div>
-                      </div>
-                    </div>
-                    <div class='col-lg-6'>
-                    </div>
-                  </div>
-                </div>
-                <div class='panel panel-primary'>
-                  <div class='panel-heading'> <label>Schedule: </label></div>
-                  <div class='panel-body'>
-                    <div class='row-lg-12'>
-                      <label>Adults:</label>
-                    </div>
-                    <div class='row-lg-12'>
-                      <div class='doropdown'>
-                        <select class='form-control' id='num-adults' onchange='update()'>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class='row-lg-12'>
-                      <div class='col-lg-6' id='schedule-panel'>
-                        <label>Check-In:</label>
-                      </div>
-                      <div class='col-lg-6' id='schedule-panel'>
-                        <label>Check-Out:</label>
-                      </div>
-                    </div>
-                    <div class='row-lg-12'>
-                      <div class='col-lg-6' id='schedule-panel2'>
-                        <div class="form-group">
-                          <div class='col-lg-12 input-group date'>
-                            <input id='datetimepicker1' type='date' class="form-control" placeholder="mm/dd/yy" onchange = 'update()'></input>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class='row-lg-12'>
-                      <div class='col-lg-6' id='schedule-panel'>
-                        <div class="form-group">
-                          <div class='col-lg-12 input-group date' >
-                            <input type='date' class="form-control" placeholder="mm/dd/yy" id='datetimepicker2' onchange = 'update()'></input>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class='row-lg-12'>
-                      <div class='col-lg-6' id='schedule-panel'>
-                        <label>Days:</label>
-                      </div>
-                      <div class='col-lg-6' id='schedule-panel'>
-                        <label>Cost($):</label>
-                      </div>
-                    </div>
-                    <div class='row-lg-12'>
-                      <div class='col-lg-6' id='schedule-panel2'>
-                        <input id='displayDays' class="form-control" type="text" placeholder="Displays days…" readonly>
-                      </div>
-                      <div class='col-lg-6' id='schedule-panel'>
-                        <input id='displayCost' class="form-control" type="text" placeholder="Displays cost…" readonly id='cost'>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class='col-lg-6'>
-                <div class='panel panel-primary'>
-                  <div class='panel-heading'><label>Other: </label></div>
-                  <div class='panel-body'>
-                    <div class="form-group">
-                      <label>Message:</label>
-                      <textarea class="form-control" rows="22" id='messages'></textarea>
-                    </div>
-                    <label class="form-label">Range</label>
-                    <input type="range" class="form-range" min="0" max="5" step="1">
-                    <label>Priority:</label>
-                    <div class="radio">
-                      <label><input type="radio" name="optradio" checked>Low</label>
-                      <label><input type="radio" name="optradio" checked>Med</label>
-                      <label><input type="radio" name="optradio" checked>High</label>
-                    </div>
-                  </div>
-                </div>
-                <a class="btn btn-info glyphicon glyphicon-erase custom" id='reset' onClick = "clearAll()"> Reset</a>
-                <a class="btn btn-success glyphicon glyphicon-send custom" id='submit' onclick="validate()"> Submit</a>
-              </div>
+            </div>
         </div>
         <footer class="footer">
             <div class="foot-container">

@@ -12,11 +12,11 @@ function update() {
 }
 function clearAll() {
   document.getElementById('userInput').value = "";
-  document.getElementById('firstInput').value = "";
-  document.getElementById('lastInput').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('address').value = "";
   document.getElementById('phone').value = "";
   document.getElementById('email').value = "";
-  document.getElementById('fax').value = "";
+  document.getElementById('messages').value = "";
   document.getElementById('datetimepicker1').value = "";
   document.getElementById('datetimepicker2').value = "";
   document.getElementById('messages').value = "";

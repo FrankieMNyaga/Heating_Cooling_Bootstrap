@@ -26,6 +26,13 @@ header {
     padding: 30px 10%;
 }
 
+.links li a {
+    text-decoration: none;
+}
+
+.header a {
+    text-decoration: none;
+}
 .logo {
     margin-right: 20px;
 }
@@ -86,11 +93,11 @@ button:hover {
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-col {
     width: 25%;
-    padding: 0 15px;
 }
 
 .footer-col h4 {
@@ -98,7 +105,6 @@ button:hover {
     color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 30px;
-    padding: 0 32px;
 }
 
 .footer-col h4::before {
@@ -117,16 +123,17 @@ ul {
     list-style: none;
 }
 
+.footer-links {
+    padding-left: 0px;
+}
+
 .footer-links li a {
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
 .footer-links li a:hover {
     color: #0088a9;
-}
-
-.social-links {
-    padding: 0 32px;
 }
 
 .social-links a i{
@@ -151,19 +158,109 @@ ul {
 
 #schedule-panel {
     padding: 0px;
-  }
-  #schedule-panel2 {
+}
+
+#schedule-panel2 {
     padding-left: 0px;
     padding-right: 10px;
-  }
-  .custom {
-    width: 300px;
-    margin-left: 100px;
-  }
-  .booking {
-    color: red;
-    font-weight: bold;
-    margin-left: 15px;
-  }
+}
+.custom {
+    width: 100px;
+    position: relative;
+    margin-left: 20px;
+}
 
+.contact-body {
+    background-color: #24252a;
+    height: 700px;
+    width: 100%;
+}
+#label-head {
+    background-color: transparent;
+}
 
+#label-item {
+    color: #ffffff;
+}
+
+.panel > .panel-heading{
+    background-image: none;
+    background-color: #0088a9;
+}
+#user-panel{
+    background-image: none;
+    border-width: 2px;
+    border-color: #0088a9;
+}
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #0088a9;	
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+.message-container {
+    position:relative;
+	margin-bottom:25px;
+}
+
+.message-container label {
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+	transition: all 0.5s ease-in-out;
+}
+
+.message-container textarea {
+    height: 100px;
+    border:0;
+    border-bottom:1px solid #555;  
+    background:transparent;
+    width:100%;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#fff;
+}
+
+.booking-body {
+    height: 700px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    border:2px solid #0088a9;
+    border-radius: 4px;
+    padding: 80px 100px;
+}
