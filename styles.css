@@ -214,11 +214,13 @@ ul {
   font-size:16px;
   color:#fff;
 }
+
 .input-container input:focus{ 
  border:none;	
  outline:none;
  border-bottom:1px solid #0088a9;	
 }
+
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
 	top:-12px;
@@ -232,6 +234,7 @@ ul {
 }
 
 .message-container label {
+    position: absolute;
 	top:0px;
 	left:0px;
 	font-size:16px;
@@ -240,7 +243,6 @@ ul {
 }
 
 .message-container textarea {
-    height: 100px;
     border:0;
     border-bottom:1px solid #555;  
     background:transparent;
@@ -248,6 +250,18 @@ ul {
     padding:8px 0 5px 0;
     font-size:16px;
     color:#fff;
+}
+
+.message-container textarea:focus {
+    border:none;	
+    outline:none;
+    border-bottom:1px solid #0088a9;
+}
+
+.message-container textarea:focus ~ label,
+.message-container textarea:valid ~ label{
+	top:-12px;
+	font-size:12px;
 }
 
 .booking-body {
@@ -261,6 +275,6 @@ ul {
 .box {
     position: relative;
     border:2px solid #0088a9;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 80px 100px;
 }
