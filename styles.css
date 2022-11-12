@@ -10,8 +10,8 @@
 h1 {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
     background-color: #24252a;
@@ -20,7 +20,7 @@ h1 {
 .description-title {
     color: #edf0f1;
     font-family: "Monserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     transition: all 0.3s ease 0s; 
 }
 
@@ -31,20 +31,20 @@ h1 {
 .description {
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .description-block {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 1em;
+    margin-right: 1em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 .description-block {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 1em;
+    margin-right: 1em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -52,7 +52,7 @@ h1 {
 .about-description {
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
-    font-size: 24px;
+    font-size: 1.5em;
     display: flex;
     justify-content: center;
     transition: all 0.3s ease 0s; 
@@ -64,21 +64,21 @@ h1 {
 .about-content {
     display: flex;
     justify-content: center;
-    margin: 20px 150px 50px 150px;
+    margin: 1.25em 9.375em 3.125em 9.375em;
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 .learn-more {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color: #edf0f1;
-    margin-top: 8px;
-    padding: 6px;
+    margin-top: 0.5em;
+    padding: 0.375em;
     background-color: #6fbb4c;
     border: none;
-    border-radius: 50px;
+    border-radius: 3.125em;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
@@ -86,7 +86,7 @@ h1 {
 li {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color: #edf0f1;
 }
 
@@ -99,7 +99,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 1.875em 10%;
 }
 
 .links li a {
@@ -110,20 +110,19 @@ header {
     text-decoration: none;
 }
 .logo {
-    margin-right: 20px;
-    height: 80px;
-    width: 80px;
+    margin-right: 0.8em;
+    height: 5em;
+    width: 5em;
 }
 .background {
-    height:
-    background-color: #24252a;
+    background: #24252a;
 }
 .title {
     text-decoration: none;
     margin-right: auto;
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25em;
     transition: all 0.3s ease 0s; 
 }
 
@@ -139,7 +138,7 @@ header {
 
 .links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0em 1.25em;
 }
 
 .links li a {
@@ -153,13 +152,13 @@ header {
 #contact-btn {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color: #edf0f1;
-    margin-left: 20px;
-    padding: 9px 25px;
+    margin-left: 1.25em;
+    padding: 0.5625em 1.5625em;
     background-color: #6fbb4c;
     border: none;
-    border-radius: 50px;
+    border-radius: 3.125em;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
@@ -173,11 +172,11 @@ button:hover {
 }
 
 .footer {
-    padding: 70px 0;
+    padding: 4.375em 0em;
 }
 
 .foot-container {
-    max-width: 1200px;
+    max-width: 75em;
     margin: auto;
 }
 .banner-1 {
@@ -185,15 +184,14 @@ button:hover {
 }
 
 .our-services-col {
-    height: 200px;
-    width: 25%;
+    height: 12.5em;
+    width: 40%;
     display: flex;
     flex-wrap: nowrap;
 }
 .our-services-row {
     display: flex;
-    max-width: 90%;
-    margin: auto;
+    margin: 1em 4em 1em 4em;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -208,22 +206,22 @@ button:hover {
 }
 
 .footer-col h4 {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 
 .footer-col h4::before {
     content: '';
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
     position: relative;
 }
 
 .foot-col ul li:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 ul {
@@ -231,7 +229,7 @@ ul {
 }
 
 .footer-links {
-    padding-left: 0px;
+    padding-left: 0em;
 }
 
 .footer-links li a {
@@ -253,16 +251,16 @@ ul {
 
 #banner-1 {
     background-color: #24252a;
-    height: 400px;
+    height: 25em;
 }
 
 #schedule-panel {
-    padding: 0px;
+    padding: 0em;
 }
 
 #schedule-panel2 {
-    padding-left: 0px;
-    padding-right: 10px;
+    padding-left: 0em;
+    padding-right: 0.625em;
 }
 .form-btn {
     display: flex;
@@ -270,12 +268,12 @@ ul {
 }
 
 .custom {
-    width: 100px;
+    width: 6.25em;
 }
 
 .contact-body {
     background-color: #24252a;
-    height: 700px;
+    height: 43.75em;
     width: 100%;
 }
 #label-head {
@@ -292,79 +290,79 @@ ul {
 }
 #user-panel{
     background-image: none;
-    border-width: 2px;
+    border-width: 0.125em;
     border-color: #6fbb4c;
 }
 
 .input-container{
 	position:relative;
-	margin-bottom:25px;
+	margin-bottom:1.5625em;
 }
 .input-container label{
 	position:absolute;
-	top:0px;
-	left:0px;
-	font-size:16px;
+	top:0em;
+	left:0em;
+	font-size:1em;
 	color:#fff;	
 	transition: all 0.5s ease-in-out;
 }
 .input-container input{ 
   border:0;
-  border-bottom:1px solid #555;  
+  border-bottom:0.0625em solid #555;  
   background:transparent;
   width:100%;
-  padding:8px 0 5px 0;
-  font-size:16px;
+  padding:0.5em 0em 0.3125em 0em;
+  font-size:1em;
   color:#fff;
 }
 
 .input-container input:focus{ 
  border:none;	
  outline:none;
- border-bottom:1px solid #6fbb4c;	
+ border-bottom:1em solid #6fbb4c;	
 }
 
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
+	top:-0.75em;
+	font-size:0.75em;
 	
 }
 
 .message-container {
     position:relative;
-	margin-bottom:25px;
+	margin-bottom:1.5625em;
 }
 
 .message-container label {
     position: absolute;
-	top:0px;
-	left:0px;
-	font-size:16px;
+	top:0em;
+	left:0em;
+	font-size:1em;
 	color:#fff;	
 	transition: all 0.5s ease-in-out;
 }
 
 .message-container textarea {
     border:0;
-    border-bottom:1px solid #555;  
+    border-bottom:0.0625em solid #555;  
     background:transparent;
     width:100%;
-    padding:8px 0 5px 0;
-    font-size:16px;
+    padding:0.5em 0 0.3125em 0;
+    font-size:1em;
     color:#fff;
 }
 
 .message-container textarea:focus {
     border:none;	
     outline:none;
-    border-bottom:1px solid #6fbb4c;
+    border-bottom:0.0625em solid #6fbb4c;
 }
 
 .message-container textarea:focus ~ label,
 .message-container textarea:valid ~ label{
-	top:-12px;
-	font-size:12px;
+	top:-0.75em;
+	font-size:0.75em;
 }
 
 .booking-body {
@@ -375,29 +373,29 @@ ul {
 
 .box {
     position: static;
-    border:2px solid #6fbb4c;
-    border-radius: 8px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 80px 100px;
+    border:0.125em solid #6fbb4c;
+    border-radius: 0.5em;
+    margin-top: 6.25em;
+    margin-bottom: 6.25em;
+    padding: 5em 6.25em;
 }
 .radio-btn {
     color: #edf0f1;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 }
 
 .radio-title {
-    font-size: 16px;
+    font-size: 1.25em;
     color: #edf0f1;
 }
 
 .text-area {
     color: #edf0f1;
     border: solid #555;
-    border-radius: 5px;
+    border-radius: 0.3125em;
     resize: none;
 }
 
@@ -410,13 +408,13 @@ ul {
 .more-btn {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color: #edf0f1;
-    margin-top: 8px;
-    padding: 6px 30px 6px 30px;
+    margin-top: 0.5em;
+    padding: 0.375em 1.875em 0.375em 1.875em;
     background-color: #6fbb4c;
     border: none;
-    border-radius: 50px;
+    border-radius: 3.125em;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
