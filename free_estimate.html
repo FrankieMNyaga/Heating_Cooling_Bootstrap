@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <header class="header">
+    <header>
         <a href="index.html"><img class="logo" src="images/Akrams Logo-noscript.png" alt="" width="50" height="50"></a>
         <a href='index.html' class="title"> AKRAM'S HEATING & COOLING</a>
         <nav>
@@ -26,7 +26,7 @@
             <div class="booking-body">
                 <div class="box">
                     <form>
-                        <div class="user-imputs">
+                        <div class="user-inputs">
                             <div class="input-container">
                                 <input id="userInput" type="text" required=""/>
                                 <label>Full Name</label>		
@@ -44,14 +44,37 @@
                                 <label>Address</label>		
                             </div>
                             <div class="input-container">
-                                <input id="messages" type="text" required=""/>
-                                <label>Message</label>		
+                                <input id="address" type="text" required=""/>
+                                <label>City</label>		
                             </div>
-                            <!--<div class="input-container">
-                                <input id="messages" class="mesasge"></input>
-                                <label>Message</label>
-                            </div>-->
-                            <div>
+                            <div class="input-container">
+                                <input id="address" type="text" required=""/>
+                                <label>Zip</label>		
+                            </div>
+                            <label class="radio-title">Type of Job</label>
+                            <div class="radio-btn">
+                                <div class="radio-col1">
+                                    <input type="radio" id="heating" name="type of job"/>
+                                    <label for="heating">Heating</label><br>
+                                    <input type="radio" id="cooling" name="type of job"/>
+                                    <label for="cooling">Cooling</label><br>
+                                    <input type="radio" id="electrical" name="type of job"/>
+                                    <label for="electrical">Electrical</label><br>
+                                </div>
+                                <div class="radio-col2">
+                                    <input type="radio" id="plumbing" name="type of job"/>
+                                    <label for="plumbing">Plumbing</label><br>
+                                    <input type="radio" id="home-renovation" name="type of job"/>
+                                    <label for="home-renovation">Home Renovation</label><br>
+                                    <input type="radio" id="landscaping" name="type of job"/>
+                                    <label for="landscaping">Landscaping</label><br>
+                                </div>
+                            </div>
+                            <label class="radio-title">Description of Job</label>
+                            <div class="input-container">
+                                <textarea class="text-area" rows="8" cols="50"></textarea>	
+                            </div>
+                            <div class="form-btn">
                                 <a class="btn btn-info glyphicon glyphicon-erase custom" id='reset' onClick = "clearAll()"> Reset</a>
                                 <a class="btn btn-success glyphicon glyphicon-send custom" id='submit' onclick="validate()"> Submit</a>
                             </div>
