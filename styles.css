@@ -218,6 +218,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 10em;
 }
 
 .footer-col {
@@ -339,7 +340,7 @@ ul {
 .input-container input:focus{ 
  border:none;	
  outline:none;
- border-bottom:1em solid #6fbb4c;	
+ border-bottom:0.1em solid #6fbb4c;	
 }
 
 .input-container input:focus ~ label,
@@ -384,7 +385,9 @@ ul {
 	top:-0.75em;
 	font-size:0.75em;
 }
-
+#booking-page {
+    background-color: #24252a;
+}
 .booking-body {
     display:flex;
     justify-content: center;
@@ -396,7 +399,7 @@ ul {
     position: static;
     border:0.125em solid #6fbb4c;
     border-radius: 0.5em;
-    margin-top: 6.25em;
+    margin-top: 3.25em;
     margin-bottom: 6.25em;
     padding: 5em 6.25em;
 }
@@ -488,6 +491,7 @@ ul {
     justify-content: center;
     padding-bottom: 0;
     padding-top: 1em;
+    margin-top: 0;
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
     background-color: #24252a;
