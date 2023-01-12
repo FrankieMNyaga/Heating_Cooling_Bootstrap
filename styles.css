@@ -10,7 +10,6 @@ h1 {
     display: flex;
     justify-content: center;
     padding-bottom: 1.25em;
-    padding-top: 1.25em;
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
     background-color: #24252a;
@@ -21,12 +20,23 @@ h1 {
     font-family: "Monserrat", sans-serif;
     font-size: 1.25em;
     transition: all 0.3s ease 0s; 
+    margin-bottom: 0.75em;
 }
 
 .description-title:hover {
     color: #6fbb4c;
 }
 
+.description-title-service {
+    color: #edf0f1;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.25em;
+    transition: all 0.3s ease 0s; 
+    margin-bottom: 0.15em;
+}
+.description-title-service:hover {
+    color: #6fbb4c;
+}
 .description {
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
@@ -47,6 +57,9 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+.about-body {
+    background-color: #24252a;
 }
 .about-description {
     font-family: "Monserrat", sans-serif;
@@ -98,6 +111,24 @@ ul.value-list{
     transition: all 0.3s ease 0s;
 }
 
+.free-estimate-div {
+    display: flex;
+    justify-content: center;
+}
+
+.free-estimate-btn {
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #edf0f1;
+    margin-top: 0.5em;
+    padding: 0.5em 6.25em 0.5em 6.25em;
+    background-color: #6fbb4c;
+    border: none;
+    border-radius: 3.125em;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
 li {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
@@ -114,7 +145,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1.875em 10%;
+    padding: 5%;
     background-color: #24252a;
 }
 
@@ -198,7 +229,7 @@ button:hover {
     margin: auto;
 }
 .banner-1 {
-    padding: 3em 0em 3em 0em;
+    padding: 0em 0em 1em 0em;
     background-color: #24252a;
 }
 
@@ -490,7 +521,6 @@ ul {
     display: flex;
     justify-content: center;
     padding-bottom: 0;
-    padding-top: 1em;
     margin-top: 0;
     font-family: "Monserrat", sans-serif;
     color: #edf0f1;
@@ -498,6 +528,10 @@ ul {
   }
   .service-section {
     height: 15em;
+    background-color: #24252a;
+  }
+  .about-section {
+    padding-bottom: 1em;
     background-color: #24252a;
   }
   .services-content {
@@ -516,9 +550,50 @@ ul {
     width: 40%;
   }
 
+  .dividersm {
+    height: 0.125em;
+    width: 4.25em;
+    margin-bottom: 0.25em;
+  }
+
+  .divider-air {
+    height: 0.125em;
+    width: 1.65em;
+    margin-bottom: 0.25em;
+  }
+
   .divider-container {
     display: flex;
     justify-content: center;
+  }
+
+  .divider-container-left {
+    display: flex;
+    justify-content: start;
+  }
+
+  .services-body {
+    background-color: #24252a;
+  }
+
+  .service-page-col {
+    height: 13.5em;
+    width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .service-block {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 85%;
+  }
+
+  .service-description {
+    font-family: "Monserrat", sans-serif;
+    color: #edf0f1;
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
   }
   
   /*css for manual slide navigation*/
@@ -568,6 +643,9 @@ ul {
   #radio4:checked ~ .first{
     margin-left: -60%;
   }
+  #radio5:checked ~ .first{
+    margin-left: -80%;
+  }
   
   /*css for automatic navigation*/
   
@@ -603,6 +681,9 @@ ul {
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #6fbb4c;
+  }
+  #radio5:checked ~ .navigation-auto .auto-btn4{
     background: #6fbb4c;
   }
         
